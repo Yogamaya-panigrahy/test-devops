@@ -3,7 +3,7 @@ pipeline {
          stages {
                  stage('One') {
                  steps {
-                     echo 'build job'
+                     python firstjob.py
                  }
                  }
                  stage('Two') {
@@ -18,7 +18,7 @@ pipeline {
                        }
                  }
                  steps {
-                       echo "Hello"
+                       Javac Hello.java
                  }
                  }
                  stage('Four') {
